@@ -13,12 +13,7 @@
 cd src
 git clone https://github.com/Alex9600t/Fake-Avatar-Decoration-Plugin userplugins/fakeAvatarDecoration
 ```
-3) Rebuild vencord:
-```sh
-pnpm build
-pnpm inject
-```
-4) 
+3) 
 > [!IMPORTANT]
 > In the file ***Vencord/src/main/csp/index.ts***, add the following value to the end of the ***CspPolicies*** variable:
 > ```ts
@@ -50,7 +45,12 @@ pnpm inject
 >    "vcfad.vercel.app": ImageAndCssSrc, // NEW
 > }
 > ```
-4) Open settings and enable the plugin.
+4) Rebuild vencord:
+```sh
+pnpm build
+pnpm inject
+```
+5) Open settings and enable the plugin.
 ### How to use?
 1) Go to ***[the website](https://vcfad.vercel.app/list)*** and find a beautiful avatar decoration.
 2) Paste the **ID** into the ***ID field***.
